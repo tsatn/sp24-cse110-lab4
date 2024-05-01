@@ -144,6 +144,12 @@
     4. Output:
         The function returns the modified array [2, 4, 6].
 
+18.   
+    please go to expose/javascript/part2-question18.js
+
+19.  
+    The outputs in the console will be in this sequence: 1, 4, 3, 2.
+
 
 
 
