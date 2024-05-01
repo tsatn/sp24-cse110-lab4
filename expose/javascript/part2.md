@@ -63,43 +63,67 @@
 
     E. student.courseLoad[0]
 
-13.   
-    '3' + 2
+
+13. 
+    A. '3' + 2
         Output: '32'
-
-        Explanation: In JavaScript, when a string is involved in a + operation with a number, the number is converted to a string and concatenated. Therefore, '3' + 2 results in the string '32'.
-
-    '3' - 2
+        Explanation: The + operator, when used with a string and a number, converts the number to a string then concatenates them.
+    
+    B. '3' - 2
         Output: 1
-
-        Explanation: Here, JavaScript converts the string '3' into a number for the subtraction. The - operator is not used for string concatenation, so JavaScript tries to convert all operands into numbers. Here, '3' is successfully converted to 3, and 3 - 2 equals 1.
-
-    3 + null
+        Explanation: The - operator converts the string '3' to a number and then performs subtraction.
+    
+    C. 3 + null
         Output: 3
-
-        Explanation: In JavaScript, null is often converted to 0 in numeric contexts. Adding 3 + 0 yields 3.
-
-    '3' + null
+        Explanation: null is treated as 0 in numeric operations, so 3 + 0 = 3.
+    
+    D. '3' + null
         Output: '3null'
-
-        Explanation: Adding null to a string converts null to the string 'null'.
-
-    true + 3
+        Explanation: null is converted to the string 'null', it is then concatenated with '3'.
+    
+    E. true + 3
         Output: 4
-
-        Explanation: In JavaScript, true is converted to 1 in numeric contexts. Thus, 1 + 3 equals 4.
-
-    false + null
+        Explanation: since true is treated as 1 in numeric operations, so 1 + 3 = 4.
+    
+    F. false + null
         Output: 0
-
-        Explanation: Both false and null are treated as 0 in numeric operations. Thus, 0 + 0 equals 0.
-
-    '3' + undefined
+        Explanation: Both false and null are treated as 0 in numeric contexts so the output is 0.
+    
+    G. '3' + undefined
         Output: '3undefined'
-
-        Explanation: When using the + operator with a string, undefined is converted to the string 'undefined'. Therefore, '3' + undefined results in '3undefined'.
-
-    '3' - undefined
+        Explanation: undefined is converted to the string then concatenated with '3'.
+    
+    H. '3' - undefined
         Output: NaN
+        Explanation: undefined is treated as NaN in numeric operations. And Any operation with NaN results in NaN.
 
-        Explanation: Subtracting undefined from any number, including when it's derived from a string, results in NaN (Not a Number), since undefined can't be converted to a valid number.
+14. 
+    A. '2' > 1
+        Output: true
+        Explanation: The string '2' is converted to the number 2, which is greater than 1.
+        
+    B. '2' < '12'
+        Output: false
+        Explanation: When comparing strings, '2' is lexically larger than '1' of '12'.
+    
+    C. 2 == '2'
+        Output: true
+        Explanation: == allows type coercion; the string '2' is converted to the number 2.
+        
+    D. 2 === '2'
+        Output: false
+        Explanation: === checks both value and type without allowing coercion.
+    
+    E. true == 2
+        Output: false
+        Explanation: true converts to 1, not 2, in numeric contexts.
+    
+    F. true === Boolean(2)
+        Output: false
+        Explanation: Although Boolean(2) is true, === checks for type identity, and Boolean(2) is not a literal but an object/converted value.
+
+15. 
+    ==: This equality operator checks if two values are equal, allowing for type conversion. That is, it can find different types of values equivalent as long as they can be converted to the same type.
+
+    ===: This strict equality operator checks for equality without converting type. It evaluates both the value and the type. Where, if types differ, the result is automatically false, regardless what the value is.
+
