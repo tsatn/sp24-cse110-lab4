@@ -127,3 +127,25 @@
 
     ===: This strict equality operator checks for equality without converting type. It evaluates both the value and the type. Where, if types differ, the result is automatically false, regardless what the value is.
 
+16. 
+    please go to expose/javascript/part2-question16.js
+
+17.  
+    The modifyArray function transforms each array element using the provided doSomething callback, effectively doubling each number in the input array. The final output is [2, 4, 6].
+
+    When the function modifyArray([1,2,3], doSomething) is called:
+    1. Initialization: 
+        An empty array newArr is created.
+    2. Processing:
+        The function iterates through each element of the array [1, 2, 3].
+        The doSomething callback is applied to each element, doubling it.
+    3. Result:
+        Results for each iteration are 2, 4, and 6, respectively, which are collected in newArr.
+    4. Output:
+        The function returns the modified array [2, 4, 6].
+
+
+
+
+
+
