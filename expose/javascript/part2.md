@@ -102,4 +102,4 @@
     '3' - undefined
         Output: NaN
 
-        Explanation: The - operator attempts to convert both operands into numbers. While '3' can be converted to 3, undefined converts to NaN. Subtracting undefined from anything results in Not a Number (NaN).
+        Explanation: Subtracting undefined from any number, including when it's derived from a string, results in NaN (Not a Number), since undefined can't be converted to a valid number.
